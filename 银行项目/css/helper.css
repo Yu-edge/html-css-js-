@@ -1,0 +1,22 @@
+.margin-left-small {
+  margin-left: 2rem;
+}
+
+.margin-right-small {
+  margin-right: 2rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.form-recover {
+  height: auto;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-recover {
+  animation: popup 3s;
+}

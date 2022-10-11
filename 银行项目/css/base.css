@@ -1,0 +1,45 @@
+:root {
+  --color-primary: #00aeef;
+  --color-primary-light: #33bef2;
+  --color-primary-dark: #008bbf;
+
+  --color-grey-light-f: #f5f5f5;
+  --color-grey-light-e: #e0e0e0;
+  --color-grey-light-c: #ccc;
+
+  /* 字体颜色 */
+  --color-grey-dark-3: #333;
+
+  --color-grey-dark-6: #666;
+  --color-grey-dark-9: #999;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10/16=0.625*/
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-grey-dark-3);
+  background-color: var(--color-grey-light-f);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus {
+  outline: 2px solid var(--color-primary);
+}

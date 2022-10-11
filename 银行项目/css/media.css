@@ -1,0 +1,50 @@
+@media screen and (max-width: 81.25em) {
+  .bills {
+    width: 50rem;
+  }
+
+  .item:last-child {
+    width: 40rem;
+  }
+
+  .function-area {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 62.5em) {
+  .bills {
+    width: 40rem;
+  }
+
+  .item:last-child {
+    width: 30rem;
+  }
+
+  .function-area {
+    width: 40rem;
+  }
+
+  .transfer > input {
+    width: 60%;
+  }
+
+  .transfer > button {
+    width: calc(40% - 2rem);
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .transfer > input {
+    padding: 0.5rem 1rem;
+  }
+
+  .transfer > input:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .transfer > button {
+    height: 9rem;
+    margin-left: 1rem;
+  }
+}

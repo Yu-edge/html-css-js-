@@ -1,0 +1,194 @@
+body {
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.nav {
+  padding: 1.5rem 2rem;
+  height: 8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  stroke: var(--color-primary);
+}
+
+.nav > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  font-size: 1.6rem;
+  color: var(--color-primary-dark);
+}
+
+main {
+  height: calc(100% - 8rem);
+  color: var(--color-primary-dark);
+  padding: 5rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+main > span {
+  font-size: 4.8rem;
+  font-weight: 300;
+
+  display: inline-block;
+  margin-top: 28rem;
+}
+
+.view {
+  font-size: 1.6rem;
+  height: 90%;
+
+  display: flex;
+}
+
+.bills {
+  width: 60rem;
+  height: 100%;
+  padding: 5rem;
+  box-shadow: 2px 0 0 var(--color-primary);
+
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-icon,
+.income-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.item:last-child {
+  width: 48.3rem;
+  background-color: var(--color-grey-light-f);
+
+  position: fixed;
+  bottom: 5.9rem;
+}
+
+.item > div {
+  padding: 0.5rem 1rem;
+  color: var(--color-primary);
+  box-shadow: 0 2px 0 var(--color-primary);
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.item > div:hover {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-f);
+}
+
+.function-area {
+  width: 60rem;
+  height: 100%;
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.remainder {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+}
+
+.recharge > input,
+.transfer > input {
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--color-primary);
+}
+
+.recharge > button,
+.transfer > button {
+  border: none;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-size: 1.6rem;
+
+  transition: all 0.3s;
+}
+
+.recharge > input {
+  border: none;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 2rem;
+  color: var(--color-primary);
+}
+
+.recharge > button {
+  padding: 1rem 2rem;
+  width: 48%;
+}
+
+.recharge > button[type="submit"] {
+  float: left;
+}
+
+.recharge > button[type="reset"] {
+  float: right;
+}
+
+.transfer > input {
+  width: 70%;
+  height: 4rem;
+
+  float: left;
+}
+
+.transfer > input:first-child {
+  margin-bottom: 2rem;
+}
+
+.transfer > button {
+  height: 10rem;
+  width: calc(30% - 2rem);
+}
+
+.transfer > button:hover,
+.recharge > button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-f);
+}
+
+.nav > :last-child > :nth-last-child(2):hover + .copy-right {
+  transform: translateX(0);
+}
+
+.copy-right {
+  font-size: 1.6rem;
+  color: var(--color-primary-dark);
+
+  transform: translateX(20rem);
+  transition: all 0.3s;
+
+  position: absolute;
+  top: 8rem;
+  right: 2rem;
+}
